@@ -7,7 +7,7 @@ from base_caching import BaseCaching
 
 
 class LIFOCache(BaseCaching):
-    """LIFOCache"""
+    """LIFOCache documented"""
     def __init__(self):
         super().__init__()
         self.last_key = ''

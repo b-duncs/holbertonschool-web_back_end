@@ -7,7 +7,7 @@ from base_caching import BaseCaching
 
 
 class MRUCache(BaseCaching):
-    """MRUCache"""
+    """MRUCache documented"""
     def __init__(self):
         super().__init__()
         self.head, self.tail = 'head', 'tail'

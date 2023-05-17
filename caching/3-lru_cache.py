@@ -7,7 +7,7 @@ from base_caching import BaseCaching
 
 
 class LRUCache(BaseCaching):
-    """LRUCache"""
+    """LRUCache document"""
     def __init__(self):
         super().__init__()
         self.head, self.tail = '-', '='
