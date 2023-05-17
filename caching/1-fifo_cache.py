@@ -7,7 +7,7 @@ from base_caching import BaseCaching
 
 
 class FIFOCache(BaseCaching):
-    """FIFOCache"""
+    """FIFOCache documented"""
     def __init__(self):
         super().__init__()
         self.data = {}
