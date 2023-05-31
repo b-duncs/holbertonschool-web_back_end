@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 """ Auth class, Require auth with stars """
-from flask import request
-from typing import List, TypeVar
 from os import getenv
+from typing import List, TypeVar
 
 
 class Auth():
