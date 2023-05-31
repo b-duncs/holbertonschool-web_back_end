@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """ handles all routes for the views for Session authentication """
-from ..views import app_views
+from api.v1.views import app_views
 from flask import abort, jsonify, request
-from .users import User
+from models.user import User
 from os import getenv
 
 

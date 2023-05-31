@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """ Session authentication """
-from .auth import Auth
+from api.v1.auth.auth import Auth
 import uuid
-from Session_authentication.models.user import User
+from models.user import User
 
 
 class SessionAuth(Auth):
