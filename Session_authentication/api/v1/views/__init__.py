@@ -2,7 +2,7 @@
 """ init file for views directory
 """
 from flask import Blueprint
-from Session_authentication.models.user import User
+from ....models.user import *
 
 app_views = Blueprint("app_views", __name__, url_prefix="/api/v1")
 
