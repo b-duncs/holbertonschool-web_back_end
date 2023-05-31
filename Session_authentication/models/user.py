@@ -2,7 +2,7 @@
 """ User module
 """
 import hashlib
-from models.base import Base
+from Session_authentication.models.base import Base
 
 
 class User(Base):
