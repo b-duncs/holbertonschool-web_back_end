@@ -3,7 +3,7 @@
     Parameterize, Integration test: fixtures, Integration tests """
 import unittest
 from unittest.mock import patch, PropertyMock, Mock
-from parameterized import parameterized
+from parameterized import parameterized_class
 from client import GithubOrgClient
 from fixtures import TEST_PAYLOAD
 from urllib.error import HTTPError
@@ -62,11 +62,10 @@ class TestGithubOrgClient(unittest.TestCase):
         self.assertEqual(expected_return, test_return)
 
 
-@parameterized_class([
-    {"org_payload": TEST_PAYLOAD[0][0], "repos_payload": TEST_PAYLOAD[0][1],
-     "expected_repos": TEST_PAYLOAD[0][2], "apache2_repos": TEST_PAYLOAD[0][3]}
-])
-
+@parameterized_class(
+    ("org_payload", "repos_payload", "expected_repos", "apache2_repos"),
+    TEST_PAYLOAD
+)
 class TestIntegrationGithubOrgClient(unittest.TestCase):
     """ TESTCASE """
     @classmethod
