@@ -2,11 +2,10 @@
 """ Parameterize and patch as decorators, Mocking a property, More patching,
     Parameterize, Integration test: fixtures, Integration tests """
 import unittest
-from unittest.mock import patch, PropertyMock, Mock
+from unittest.mock import patch, PropertyMock
 from parameterized import parameterized, parameterized_class
 from client import GithubOrgClient
 from fixtures import TEST_PAYLOAD
-from urllib.error import HTTPError
 
 
 class TestGithubOrgClient(unittest.TestCase):
@@ -72,7 +71,8 @@ class TestIntegrationGithubOrgClient(unittest.TestCase):
     def setUpClass(cls):
         """ It is part of the unittest.TestCase API
         method to return example payloads found in the fixtures """
-        cls.get_patcher = patch('requests.get', side_effect=HTTPError)
+        cls.get_patcher = patch('requests.get')
+        cls.mock_get = cls.get_patcher.start()
 
     @classmethod
     def tearDownClass(cls):
