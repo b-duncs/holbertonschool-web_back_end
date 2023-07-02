@@ -93,13 +93,9 @@ A
 package-lock.json,f/a/fa288d1472d29beccb489a676f68739ad365fc47
 M
 queuing_system_in_js/dump.rdb,d/3/d37dd35337256e59c855a75906aca259596180dc
-R
-"queuing_system_in_js/1-redis_op.js,d/5/d557faae683e7c211c4bddc3431a3f24a3b2c753
 M
 unittests_in_js/10-api/api.js,8/6/8637e30d0a734de6b0e1ed1c729959fc4b9fa8c5
 R
 "unittests_in_js/10-api/api.test.js,a/d/ad907fe2e505378f073358b0239cdfe577a8f342
-V
-&queuing_system_in_js/0-redis_client.js,e/b/ebad01dcf0d24b2dc19511925960b44c8cb25ec3
 V
 &queuing_system_in_js/package-lock.json,3/c/3c4213d60df5f83f6c1103552e2eebce1e1f5249
